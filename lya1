@@ -478,7 +478,7 @@ function HelloLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-
+	MainWindow.Visible = true
 
 	if WindowConfig.SaveConfig then
 		if not isfolder(WindowConfig.ConfigFolder) then
@@ -1752,7 +1752,7 @@ function HelloLib:MakeWindow(WindowConfig)
 	
 	return TabFunction
 end   
-	MainWindow.Visible = true
+
 function HelloLib:Destroy()
 	Hello:Destroy()
 end
