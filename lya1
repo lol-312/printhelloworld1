@@ -478,6 +478,7 @@ function HelloLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = false
 	end
+	WindowConfig.IntroEnabled = false
 	WindowConfig.IntroText = WindowConfig.IntroText or "Hello Library"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
