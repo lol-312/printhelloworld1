@@ -652,14 +652,14 @@ function HelloLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		HelloLib:MakeNotification({
 			Name = "Interface Hidden",
-			Content = "Tap RightAlt to reopen the interface",
+			Content = "Tap Insert to reopen the interface",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
-		if Input.KeyCode == Enum.KeyCode.RightAlt and UIHidden then
+		if Input.KeyCode == Enum.KeyCode.Insert and UIHidden then
 			MainWindow.Visible = true
 		end
 	end)
