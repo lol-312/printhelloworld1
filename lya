@@ -481,8 +481,8 @@ function HelloLib:MakeWindow(WindowConfig)
 	WindowConfig.IntroText = WindowConfig.IntroText or "Hello Library"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
-	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://14382228742"
-	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://14382228742"
+	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
+	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://8834748103"
 	HelloLib.Folder = WindowConfig.ConfigFolder
 	HelloLib.SaveCfg = WindowConfig.SaveConfig
 
