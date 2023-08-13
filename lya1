@@ -644,14 +644,14 @@ function HelloLib:MakeWindow(WindowConfig)
 		UIHidden = true
 		HelloLib:MakeNotification({
 			Name = "Interface Hidden",
-			Content = "Tap RightShift to reopen the interface",
+			Content = "Tap Insert to reopen the interface",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
-		if Input.KeyCode == Enum.KeyCode.RightShift and UIHidden then
+if Input.KeyCode == Enum.KeyCode.Insert then
 			MainWindow.Visible = true
 		end
 	end)
@@ -676,7 +676,7 @@ function HelloLib:MakeWindow(WindowConfig)
 		Minimized = not Minimized    
 	end)
 
-	local function LoadSequence()
+--[[	local function LoadSequence()
 		MainWindow.Visible = false
 		local LoadSequenceLogo = SetProps(MakeElement("Image", WindowConfig.IntroIcon), {
 			Parent = Hello,
@@ -707,7 +707,7 @@ function HelloLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = true
 		LoadSequenceLogo:Destroy()
 		LoadSequenceText:Destroy()
-	end 
+	end ]]
 
 	if WindowConfig.IntroEnabled then
 		LoadSequence()
